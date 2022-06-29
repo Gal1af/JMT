@@ -1,0 +1,51 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1652682404009,42,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652682405064,1054,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652682405203,127,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1652682405245,42,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652685423298,52,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652685423621,322,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652685423751,120,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1652685423790,39,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687178636,44,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687178967,330,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687179120,137,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1652687179163,43,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687254873,42,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687255197,323,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687255339,139,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1652687255383,44,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687255383,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,600,0,1,1,null,0,0,0
+1652692143613,42,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692143921,308,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692143968,43,WNSP_AnyMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692144011,41,WNSP_Disconnect(Host returns NAK while terminal expecting ACK),,,Thread Group 1-1,,false,,952,0,1,1,null,0,0,0
+1652692144011,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,682,0,1,1,null,0,0,0
+1652692540074,50,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692540454,376,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692540508,50,WNSP_AnyMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692540557,48,WNSP_Disconnect(Host returns NAK while terminal expecting ACK),,,Thread Group 1-1,,false,,952,0,1,1,null,0,0,0
+1652692540558,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,682,0,1,1,null,0,0,0
+1652692562324,41,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692562621,297,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692562752,118,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1652692562793,41,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692562793,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,600,0,1,1,null,0,0,0
+1652692580593,42,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692580889,295,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692580934,41,WNSP_AnyMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692580974,40,WNSP_Disconnect(Host returns NAK while terminal expecting ACK),,,Thread Group 1-1,,false,,952,0,1,1,null,0,0,0
+1652692580975,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,682,0,1,1,null,0,0,0
+1652692586181,43,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692586554,372,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692586682,124,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1652692586727,44,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692586728,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,600,0,1,1,null,0,0,0
+1653301569631,86,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653301570512,858,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653301570701,140,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1653301570754,51,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653303047765,56,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653303048115,348,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653303048254,131,"WNSP_ServiceRequestMessage(Expected message type: SERVICE_RESPONSE, but received: NAK)",,,Thread Group 1-1,,false,,1153,0,1,1,null,0,0,0
+1653303048300,46,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0

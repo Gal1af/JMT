@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="SPDH message test (Purchase)" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Execution variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="threads" elementType="Argument">
+            <stringProp name="Argument.name">threads</stringProp>
+            <stringProp name="Argument.value">${__P(threads,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">input variable</stringProp>
+          </elementProp>
+          <elementProp name="instance" elementType="Argument">
+            <stringProp name="Argument.name">instance</stringProp>
+            <stringProp name="Argument.value">${__P(instance,nft2)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">input variable</stringProp>
+          </elementProp>
+          <elementProp name="Const_timer" elementType="Argument">
+            <stringProp name="Argument.name">Const_timer</stringProp>
+            <stringProp name="Argument.value">${__P(input_time,1000)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="STANValue" elementType="Argument">
+            <stringProp name="Argument.name">STANValue</stringProp>
+            <stringProp name="Argument.value">${__P(STANValue,600)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="STANMax" elementType="Argument">
+            <stringProp name="Argument.name">STANMax</stringProp>
+            <stringProp name="Argument.value">${__P(STANMax,1111)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TIDValue" elementType="Argument">
+            <stringProp name="Argument.name">TIDValue</stringProp>
+            <stringProp name="Argument.value">${__P(TIDValue,71100137)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TIDMax" elementType="Argument">
+            <stringProp name="Argument.name">TIDMax</stringProp>
+            <stringProp name="Argument.value">${__P(TIDMax,71100137)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="WNSP_Connect_serviceID" elementType="Argument">
+            <stringProp name="Argument.name">WNSP_Connect_serviceID</stringProp>
+            <stringProp name="Argument.value">PMG.4-01</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="rampup" elementType="Argument">
+            <stringProp name="Argument.name">rampup</stringProp>
+            <stringProp name="Argument.value">${__P(rampup,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="duration" elementType="Argument">
+            <stringProp name="Argument.name">duration</stringProp>
+            <stringProp name="Argument.value">${__P(duration,60)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TID" elementType="Argument">
+            <stringProp name="Argument.name">TID</stringProp>
+            <stringProp name="Argument.value">71100137</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+        <stringProp name="TestPlan.comments">${__P(duration,600)}     ${__P(input_users,50)}</stringProp>
+      </Arguments>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="SPDHMessage.csv" enabled="true">
+        <stringProp name="delimiter">,</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="filename">config/SPDHMessage.csv</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="variableNames">HDR1-2,HDR3-4,HDR39,HDR40,HDR41-42,HDR43,HDR44,HDR45,HDR46-48,FID-P,FID-q,FID-B,FID-e,FID-U,FID-P1,FID-T,FID-E,FID-I,FID-O,FID-G-MAC,FID-BatchID,FID-dm,FID-b,FID-y,FID-n,FID-^,FID-/,FID-?,FID-D,FID-a,FID-s,FID-d,FID-J,FID-w,FID-c,FID-e1,FID-M,FID-O1,FID-V,FID-Q,FID-X,FID-R,FID-C1,FID-Z</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="endPoint.csv" enabled="true">
+        <stringProp name="filename">config/${instance}endPoint.csv</stringProp>
+        <stringProp name="fileEncoding"></stringProp>
+        <stringProp name="variableNames">TCPConnect_IP,TCP_BDK</stringProp>
+        <boolProp name="ignoreFirstLine">true</boolProp>
+        <stringProp name="delimiter">,</stringProp>
+        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="recycle">true</boolProp>
+        <boolProp name="stopThread">false</boolProp>
+        <stringProp name="shareMode">shareMode.all</stringProp>
+      </CSVDataSet>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">5</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${rampup}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">${duration}</stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="BeanShell Sampler" enabled="true">
+          <stringProp name="BeanShellSampler.query">vars.put(&quot;GUID&quot;, &quot;${__UUID}&quot;);
+vars.put(&quot;CURRENT_DATE&quot;, &quot;${__time(yyMMdd,)}&quot;);
+vars.put(&quot;CURRENT_TIME&quot;, &quot;${__time(HHmmss,)}&quot;);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="TID" enabled="false">
+          <stringProp name="CounterConfig.start">${TIDValue}</stringProp>
+          <stringProp name="CounterConfig.end">${TIDMax}</stringProp>
+          <stringProp name="CounterConfig.incr">0</stringProp>
+          <stringProp name="CounterConfig.name">TID</stringProp>
+          <stringProp name="CounterConfig.format"></stringProp>
+          <boolProp name="CounterConfig.per_user">false</boolProp>
+          <stringProp name="TestPlan.comments">${__P(TIDValue,31100106)}  ${__P(TIDMax,31100106)}</stringProp>
+        </CounterConfig>
+        <hashTree/>
+        <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="STAN" enabled="true">
+          <stringProp name="CounterConfig.start">${STANValue}</stringProp>
+          <stringProp name="CounterConfig.end">${STANMax}</stringProp>
+          <stringProp name="CounterConfig.incr">1</stringProp>
+          <stringProp name="CounterConfig.name">STAN</stringProp>
+          <stringProp name="CounterConfig.format">000000</stringProp>
+          <boolProp name="CounterConfig.per_user">true</boolProp>
+          <stringProp name="TestPlan.comments">${__P(STANValue,600)}  ${__P(STANMax,1111)}</stringProp>
+        </CounterConfig>
+        <hashTree/>
+        <com.aevi.jmeter.wnsp.samplers.TCPConnectSampler guiclass="com.aevi.jmeter.wnsp.samplers.TCPConnectGui" testclass="com.aevi.jmeter.wnsp.samplers.TCPConnectSampler" testname="WNSP_TCPConnect" enabled="true">
+          <stringProp name="ip">${TCPConnect_IP}</stringProp>
+          <intProp name="port">11320</intProp>
+          <longProp name="timeout">2000</longProp>
+          <boolProp name="ssl">true</boolProp>
+          <stringProp name="BDK">${TCP_BDK}</stringProp>
+        </com.aevi.jmeter.wnsp.samplers.TCPConnectSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${Const_timer}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.aevi.jmeter.wnsp.samplers.WNSPConnectSampler guiclass="com.aevi.jmeter.wnsp.samplers.WNSPConnectGui" testclass="com.aevi.jmeter.wnsp.samplers.WNSPConnectSampler" testname="WNSP_Connect" enabled="true">
+          <stringProp name="ip">localhost</stringProp>
+          <intProp name="port">1234</intProp>
+          <stringProp name="tid">${TID}</stringProp>
+          <longProp name="timeout">1000</longProp>
+          <stringProp name="version">1</stringProp>
+          <stringProp name="serviceId">${WNSP_Connect_serviceID}</stringProp>
+          <stringProp name="connectionType">PMG</stringProp>
+        </com.aevi.jmeter.wnsp.samplers.WNSPConnectSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${Const_timer}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageSampler guiclass="com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageGui" testclass="com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageSampler" testname="WNSP_SPDHMessage" enabled="false">
+          <stringProp name="tid">${TID}</stringProp>
+          <stringProp name="msg">&lt;TRANSACTION Description=&quot;Purchase&quot; Timeout=&quot;45&quot; PMGAuthService=&quot;PMG.4-99&quot; FinancialTransaction=&quot;False&quot; &gt;
+  &lt;SPDH&gt;
+    &lt;HEADER&gt;
+      &lt;HDR Name=&quot;1-2&quot; Description=&quot;Device type (.9)&quot; Data=&quot;${HDR1-2}&quot; /&gt;
+      &lt;HDR Name=&quot;3-4&quot; Description=&quot;Transmission number&quot; Data=&quot;${HDR3-4}&quot; /&gt; 
+      &lt;HDR Name=&quot;5-20&quot; Description=&quot;Terminal ID&quot; Data=&quot;${TID}&quot; /&gt;
+      &lt;HDR Name=&quot;21-26&quot; Description=&quot;STAN&quot; Data=&quot;${STAN}&quot; /&gt;
+      &lt;HDR Name=&quot;27-32&quot; Description=&quot;Current date&quot; Data=&quot;${CURRENT_DATE}&quot; /&gt;
+      &lt;HDR Name=&quot;33-38&quot; Description=&quot;Current time&quot; Data=&quot;${CURRENT_TIME}&quot; /&gt;
+     &lt;HDR Name=&quot;39&quot; Description=&quot;Message type&quot; Data=&quot;${HDR39}&quot; /&gt; 
+      &lt;HDR Name=&quot;40&quot; Description=&quot;Message subtype&quot; Data=&quot;${HDR40}&quot; /&gt; 
+      &lt;HDR Name=&quot;41-42&quot; Description=&quot;Transaction code&quot; Data=&quot;${HDR41-42}&quot; /&gt;
+      &lt;HDR Name=&quot;43&quot; Description=&quot;Processing flag 1&quot; Data=&quot;${HDR43}&quot; /&gt; 
+      &lt;HDR Name=&quot;44&quot; Description=&quot;Processing flag 2&quot; Data=&quot;${HDR44}&quot; /&gt;
+      &lt;HDR Name=&quot;45&quot; Description=&quot;Processing flag 3&quot; Data=&quot;${HDR45}&quot; /&gt; 
+      &lt;HDR Name=&quot;46-48&quot; Description=&quot;Response Code&quot; Data=&quot;000&quot; /&gt; 
+    &lt;/HEADER&gt;
+    
+    &lt;EXTENSION&gt;
+      &lt;FID Name=&quot;P&quot; Description=&quot;Draft capture flag&quot; Data=&quot;${FID-P}&quot; /&gt;
+      &lt;FID Name=&quot;q&quot; Description=&quot;Track 2 - obsahuje START a END sentinel&quot; Data=&quot;;4761739001010135=22122011955945800001?&quot; /&gt;
+      &lt;FID Name=&quot;B&quot; Description=&quot;AMOUNT&quot; Data=&quot;100&quot; /&gt; 
+      &lt;FID Name=&quot;e&quot; Description=&quot;POS condition code&quot; Data=&quot;${FID-e}&quot; /&gt; 
+      &lt;FID Name=&quot;U&quot; Description=&quot;&quot; Data=&quot;${FID-U}&quot; /&gt; 
+      
+      &lt;FID Name=&quot;6&quot; Description=&quot;Additional data&quot; Data=&quot;&quot;&gt;
+      	&lt;FID Name=&quot;P&quot; Description=&quot;CVM Result&quot; Data=&quot;${FID-P1}&quot; /&gt; 
+	&lt;FID Name=&quot;T&quot; Description=&quot;DUKPT KSN (Key serial number)&quot; Data=&quot;${FID-T}&quot; /&gt; 
+	&lt;FID Name=&quot;E&quot; Description=&quot;POS entry mode&quot; Data=&quot;${FID-E}&quot; /&gt; 
+	&lt;FID Name=&quot;I&quot; Description=&quot;Currency code&quot; Data=&quot;${FID-I}&quot; /&gt; 
+	&lt;FID Name=&quot;O&quot; Description=&quot;&quot; Data=&quot;${FID-O}&quot; /&gt;  
+      &lt;/FID&gt;
+      
+      &lt;FID Name=&quot;G&quot; Description=&quot;MAC&quot; Data=&quot;${FID-G-MAC}&quot; /&gt;
+      &lt;FID Name=&quot;8&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            &lt;FID Name=&quot;U&quot; Description=&quot;8-U&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;G&quot; Description=&quot;GUID&quot; Data=&quot;${GUID}&quot; /&gt;
+            &lt;/FID&gt;
+      &lt;/FID&gt;
+      
+       &lt;FID Name=&quot;9&quot; Description=&quot;User specific data&quot; Data=&quot;&quot;&gt;
+            &lt;FID Name=&quot;B&quot; Description=&quot;Batch ID&quot; Data=&quot;437&quot; /&gt; 
+            &lt;FID Name=&quot;C&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&apos;&quot;&apos; Description=&quot;EFT application version&quot; Data=&quot;${FID-dm}&quot; /&gt;
+            	&lt;FID Name=&quot;b&quot; Description=&quot;LineId-Identifier of selected carddb record&quot; Data=&quot;${FID-b}&quot; /&gt;			
+            	&lt;FID Name=&quot;y&quot; Description=&quot;&quot; Data=&quot;${FID-y}&quot; /&gt; 
+            	&lt;FID Name=&quot;n&quot; Description=&quot;Identifier of version of terminal configuration&quot; Data=&quot;${FID-n}&quot; /&gt; 
+            	&lt;FID Name=&quot;^&quot; Description=&quot;&quot; Data=&quot;${FID-^}&quot; /&gt; 
+            	&lt;FID Name=&quot;/&quot; Description=&quot;&quot; Data=&quot;${FID-/}&quot; /&gt; 
+            	&lt;FID Name=&quot;?&quot; Description=&quot;&quot; Data=&quot;${FID-?}&quot; /&gt; 
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;D&quot; Description=&quot;Transaction date and time&quot; Data=&quot;${FID-D}&quot; /&gt; 
+            &lt;FID Name=&quot;e&quot; Description=&quot;&quot; Data=&quot;&quot; /&gt;
+            &lt;FID Name=&quot;f&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;a&quot; Description=&quot;&quot; Data=&quot;${FID-a}&quot; /&gt; 
+            	&lt;FID Name=&quot;s&quot; Description=&quot;&quot; Data=&quot;${FID-s}&quot; /&gt; 
+            	&lt;FID Name=&quot;d&quot; Description=&quot;&quot; Data=&quot;${FID-d}&quot; /&gt; 
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;g&quot; Description=&quot;GlobalReconciliationID&quot; Data=&quot;&quot; /&gt;
+            &lt;FID Name=&quot;J&quot; Description=&quot;TipAmount&quot; Data=&quot;${FID-J}&quot; /&gt; 
+            &lt;FID Name=&quot;+&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;w&quot; Description=&quot;WorkstationID&quot; Data=&quot;${FID-w}&quot; /&gt; 
+
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;L&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;c&quot; Description=&quot;&quot; Data=&quot;${FID-c}&quot; /&gt; 
+            	&lt;FID Name=&quot;e&quot; Description=&quot;EncodingMode&quot; Data=&quot;${FID-e1}&quot; /&gt; 
+            	&lt;FID Name=&quot;M&quot; Description=&quot;Merchant language used for current transaction&quot; Data=&quot;${FID-M}&quot; /&gt; 
+            &lt;/FID&gt;
+	    &lt;FID Name=&quot;m&quot; Description=&quot;&quot; Data=&quot;&quot; /&gt;
+	    &lt;FID Name=&quot;O&quot; Description=&quot;&quot; Data=&quot;${FID-O1}&quot; /&gt; 
+	    &lt;FID Name=&quot;t&quot; Description=&quot;&quot; Data=&quot;${TID}&quot; /&gt;
+           &lt;FID Name=&quot;V&quot; Description=&quot;Verification Method&quot; Data=&quot;${FID-V}&quot; /&gt; 
+           &lt;FID Name=&quot;W&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;Q&quot; Description=&quot;4messageSupported&quot; Data=&quot;${FID-Q}&quot; /&gt; 
+            &lt;/FID&gt;
+           &lt;FID Name=&quot;X&quot; Description=&quot;&quot; Data=&quot;${FID-X}&quot;/&gt;
+          &lt;FID Name=&quot;z&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+          	&lt;FID Name=&quot;R&quot; Description=&quot;&quot; Data=&quot;${FID-R}&quot; /&gt; 
+          	&lt;FID Name=&quot;C&quot; Description=&quot;CardBrand / Issuer Name&quot; Data=&quot;${FID-C1}&quot; /&gt; 
+          &lt;/FID&gt;
+          &lt;FID Name=&quot;Z&quot; Description=&quot;&quot; Data=&quot;${FID-Z}&quot; /&gt; 
+      &lt;/FID&gt;
+    &lt;/EXTENSION&gt;
+  &lt;/SPDH&gt;
+&lt;/TRANSACTION&gt;</stringProp>
+          <stringProp name="type">MESSAGE</stringProp>
+        </com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageSampler>
+        <hashTree>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="false">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">//HDR[@Name=&quot;46-48&quot;][@Data=&quot;000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="extract RC to VAR" enabled="false">
+            <stringProp name="XPathExtractor.default"></stringProp>
+            <stringProp name="XPathExtractor.refname">RESPONSE</stringProp>
+            <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery">//HDR[@Name=&quot;46-48&quot;]/@Data</stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+            <boolProp name="XPathExtractor.fragment">true</boolProp>
+          </XPathExtractor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${Const_timer}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageSampler guiclass="com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageGui" testclass="com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageSampler" testname="WNSP_SPDHMessage_old" enabled="true">
+          <stringProp name="tid">${TID}</stringProp>
+          <stringProp name="msg">&lt;TRANSACTION Description=&quot;Purchase&quot; Timeout=&quot;45&quot; PMGAuthService=&quot;PMG.4-99&quot; FinancialTransaction=&quot;True&quot; &gt;
+  &lt;SPDH&gt;
+    &lt;HEADER&gt;
+      &lt;HDR Name=&quot;1-2&quot; Description=&quot;Device type (.9)&quot; Data=&quot;9.&quot; /&gt;
+      &lt;HDR Name=&quot;3-4&quot; Description=&quot;Transmission number&quot; Data=&quot;64&quot; /&gt;
+      &lt;HDR Name=&quot;5-20&quot; Description=&quot;Terminal ID&quot; Data=&quot;${TID}&quot; /&gt;
+      &lt;HDR Name=&quot;21-26&quot; Description=&quot;STAN&quot; Data=&quot;${STAN}&quot; /&gt;
+      &lt;HDR Name=&quot;27-32&quot; Description=&quot;Current date&quot; Data=&quot;${CURRENT_DATE}&quot; /&gt;
+      &lt;HDR Name=&quot;33-38&quot; Description=&quot;Current time&quot; Data=&quot;000001&quot; /&gt;
+      &lt;HDR Name=&quot;39&quot; Description=&quot;Message type&quot; Data=&quot;F&quot; /&gt;
+      &lt;HDR Name=&quot;40&quot; Description=&quot;Message subtype&quot; Data=&quot;O&quot; /&gt;
+      &lt;HDR Name=&quot;41-42&quot; Description=&quot;Transaction code&quot; Data=&quot;00&quot; /&gt;
+      &lt;HDR Name=&quot;43&quot; Description=&quot;Processing flag 1&quot; Data=&quot;0&quot; /&gt;
+      &lt;HDR Name=&quot;44&quot; Description=&quot;Processing flag 2&quot; Data=&quot;0&quot; /&gt;
+      &lt;HDR Name=&quot;45&quot; Description=&quot;Processing flag 3&quot; Data=&quot;0&quot; /&gt;
+      &lt;HDR Name=&quot;46-48&quot; Description=&quot;Response Code&quot; Data=&quot;000&quot; /&gt;
+    &lt;/HEADER&gt;
+    
+    &lt;EXTENSION&gt;
+      &lt;FID Name=&quot;P&quot; Description=&quot;Draft capture flag&quot; Data=&quot;1&quot; /&gt;
+      &lt;FID Name=&quot;q&quot; Description=&quot;Track 2 - obsahuje START a END sentinel&quot; Data=&quot;;4761739001010135=22122011955945800001?&quot; /&gt;
+      &lt;FID Name=&quot;B&quot; Description=&quot;AMOUNT&quot; Data=&quot;10&quot; /&gt;
+      &lt;FID Name=&quot;e&quot; Description=&quot;POS condition code&quot; Data=&quot;00&quot; /&gt;
+      &lt;FID Name=&quot;U&quot; Description=&quot;&quot; Data=&quot;0&quot; /&gt;
+      
+      &lt;FID Name=&quot;6&quot; Description=&quot;Additional data&quot; Data=&quot;&quot;&gt;
+      	&lt;FID Name=&quot;P&quot; Description=&quot;&quot; Data=&quot;010522410302008CA0000000031010&quot; /&gt;
+	&lt;FID Name=&quot;T&quot; Description=&quot;DUKPT KSN (Key serial number)&quot; Data=&quot;FFFF98765404D70000E5&quot; /&gt;
+	&lt;FID Name=&quot;E&quot; Description=&quot;POS entry mode&quot; Data=&quot;021&quot; /&gt;
+	&lt;FID Name=&quot;I&quot; Description=&quot;Currency code&quot; Data=&quot;978&quot; /&gt;
+	&lt;FID Name=&quot;O&quot; Description=&quot;&quot; Data=&quot;01808262104133CF692BBB352861F5C0000015351214C02000010000082600000000100006010A03A00000&quot; /&gt;
+      &lt;/FID&gt;
+      
+      &lt;FID Name=&quot;G&quot; Description=&quot;MAC&quot; Data=&quot;1F4A3556&quot; /&gt;
+      
+      &lt;FID Name=&quot;8&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            &lt;FID Name=&quot;A&quot; Description=&quot;8-A&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;S&quot; Description=&quot;8-A-S&quot; Data=&quot;&quot; /&gt;
+            	&lt;FID Name=&quot;T&quot; Description=&quot;8-A-T&quot; Data=&quot;&quot; /&gt;
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;U&quot; Description=&quot;8-U&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;G&quot; Description=&quot;GUID&quot; Data=&quot;${GUID}&quot; /&gt;
+            &lt;/FID&gt;
+      &lt;/FID&gt;
+      
+       &lt;FID Name=&quot;9&quot; Description=&quot;User specific data&quot; Data=&quot;&quot;&gt;
+            &lt;FID Name=&quot;B&quot; Description=&quot;Batch ID&quot; Data=&quot;001&quot; /&gt;
+            &lt;FID Name=&quot;C&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&apos;&quot;&apos; Description=&quot;&quot; Data=&quot;04.01.145002&quot; /&gt;
+            	&lt;FID Name=&quot;b&quot; Description=&quot;&quot; Data=&quot;381366&quot; /&gt;
+            	&lt;FID Name=&quot;y&quot; Description=&quot;&quot; Data=&quot;9B02E8009F0702FF809F0802008C9F0902008C9F0607A0000000031010500C5649534120444542495430325F24032212319F0D05F0000088009F0E0500400000009F0F05F0000098005F2403221231&quot; /&gt;
+            	&lt;FID Name=&quot;n&quot; Description=&quot;&quot; Data=&quot;1616754814948&quot; /&gt;
+            	&lt;FID Name=&quot;^&quot; Description=&quot;&quot; Data=&quot;0&quot; /&gt;
+            	&lt;FID Name=&quot;/&quot; Description=&quot;&quot; Data=&quot;03472035&quot; /&gt;
+            	&lt;FID Name=&quot;?&quot; Description=&quot;&quot; Data=&quot;0&quot; /&gt;
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;D&quot; Description=&quot;Transaction date and time&quot; Data=&quot;210413082638&quot; /&gt;
+            &lt;FID Name=&quot;e&quot; Description=&quot;&quot; Data=&quot;&quot; /&gt;
+            &lt;FID Name=&quot;f&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;a&quot; Description=&quot;&quot; Data=&quot;120&quot; /&gt;
+            	&lt;FID Name=&quot;s&quot; Description=&quot;&quot; Data=&quot;01&quot; /&gt;
+            	&lt;FID Name=&quot;d&quot; Description=&quot;&quot; Data=&quot;37&quot; /&gt;
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;g&quot; Description=&quot;&quot; Data=&quot;&quot; /&gt;
+            &lt;FID Name=&quot;J&quot; Description=&quot;&quot; Data=&quot;0&quot; /&gt;
+            &lt;FID Name=&quot;+&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;w&quot; Description=&quot;&quot; Data=&quot;POS01&quot; /&gt;
+
+            &lt;/FID&gt;
+            &lt;FID Name=&quot;L&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;c&quot; Description=&quot;&quot; Data=&quot;en&quot; /&gt;
+            	&lt;FID Name=&quot;e&quot; Description=&quot;&quot; Data=&quot;1&quot; /&gt;
+            	&lt;FID Name=&quot;M&quot; Description=&quot;&quot; Data=&quot;en&quot; /&gt;
+            &lt;/FID&gt;
+	    &lt;FID Name=&quot;m&quot; Description=&quot;&quot; Data=&quot;&quot; /&gt;
+	    &lt;FID Name=&quot;O&quot; Description=&quot;&quot; Data=&quot;60B0C800000000000003472035&quot; /&gt;
+	    &lt;FID Name=&quot;t&quot; Description=&quot;&quot; Data=&quot;${TID}&quot; /&gt;
+           &lt;FID Name=&quot;V&quot; Description=&quot;&quot; Data=&quot;1&quot; /&gt;
+           &lt;FID Name=&quot;W&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+            	&lt;FID Name=&quot;Q&quot; Description=&quot;&quot; Data=&quot;1&quot; /&gt;
+            &lt;/FID&gt;
+           &lt;FID Name=&quot;X&quot; Description=&quot;&quot; Data=&quot;5F2A0208269B02E8009F0702FF809F330360B0C89F6604000000005F2503090701DFD13205DC4004F800DFD133050010000000DFD13405DC40002800DFD135023336DFD20101C0DFD4020151&quot;/&gt;
+          &lt;FID Name=&quot;z&quot; Description=&quot;&quot; Data=&quot;&quot;&gt;
+          	&lt;FID Name=&quot;R&quot; Description=&quot;&quot; Data=&quot;VISA DEBIT02&quot; /&gt;
+          	&lt;FID Name=&quot;C&quot; Description=&quot;&quot; Data=&quot;VISA EMV&quot; /&gt;
+          &lt;/FID&gt;
+          &lt;FID Name=&quot;Z&quot; Description=&quot;&quot; Data=&quot;025|0100|0255|2550|025||||4|false|||2035728||false|WetStock|3|||;&quot; /&gt;
+      &lt;/FID&gt;
+    &lt;/EXTENSION&gt;
+  &lt;/SPDH&gt;
+&lt;/TRANSACTION&gt;</stringProp>
+          <stringProp name="type">MESSAGE</stringProp>
+        </com.aevi.jmeter.wnsp.samplers.WNSPSPDHMessageSampler>
+        <hashTree>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="XPath Assertion" enabled="false">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">//HDR[@Name=&quot;46-48&quot;][@Data=&quot;000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="extract RC to VAR" enabled="false">
+            <stringProp name="XPathExtractor.default"></stringProp>
+            <stringProp name="XPathExtractor.refname">RESPONSE</stringProp>
+            <stringProp name="XPathExtractor.matchNumber">-1</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery">//HDR[@Name=&quot;46-48&quot;]/@Data</stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+            <boolProp name="XPathExtractor.fragment">true</boolProp>
+          </XPathExtractor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${Const_timer}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <com.aevi.jmeter.wnsp.samplers.WNSPDisconnectSampler guiclass="com.aevi.jmeter.wnsp.samplers.WNSPDisconnectGui" testclass="com.aevi.jmeter.wnsp.samplers.WNSPDisconnectSampler" testname="WNSP_Disconnect" enabled="true">
+          <stringProp name="tid">${TID}</stringProp>
+        </com.aevi.jmeter.wnsp.samplers.WNSPDisconnectSampler>
+        <hashTree>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">${Const_timer}</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+      </hashTree>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">AeviReports\BP_Purchase_SPDHMessage_AGR.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">AeviReports\BP_Purchase_SPDHMessage_VRT.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,3 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1645451977795,9,BeanShell Sampler,200,OK,Thread Group 1-1,text,true,,0,0,1,1,null,0,0,0
+1645451979973,2043,TCPConnect: java.net.ConnectException: Connection refused: connect,,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0

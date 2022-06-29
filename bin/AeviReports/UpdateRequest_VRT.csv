@@ -1,0 +1,94 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1652679375514,42,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652679375816,301,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652679376099,278,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652679376099,10,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652679376221,113,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652681615491,46,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652681615806,314,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652681616073,262,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652681616074,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652681616195,121,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652685667313,52,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652685667653,335,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652685667903,241,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652685667905,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652685668024,118,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687078121,40,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687078426,305,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687078652,222,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652687078653,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652687078786,132,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687098561,45,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687098899,338,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687099168,264,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652687099169,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652687099298,130,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687116321,48,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687116666,345,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687116915,244,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652687116915,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652687117047,132,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687153945,42,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687154259,314,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652687154582,320,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652687154582,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652687154708,126,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652689490399,39,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652689490691,291,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652689490952,258,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652689490952,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652689491070,118,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652689555811,44,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652689556129,318,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652689556361,229,WNSP_UpdateMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652689556361,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652689556490,129,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652691725378,45,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652691725737,359,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652691726610,860,WNSP_UpdateMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652691726610,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,682,0,1,1,null,0,0,0
+1652691726742,132,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692000496,50,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692000825,323,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692000898,42,WNSP_AnyMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652692000899,1,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652692000942,42,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697632350,43,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697632702,351,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697633163,455,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652697633163,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652697633289,125,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697646068,40,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697646364,296,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697646662,295,WNSP_UpdateMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652697646663,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652697646782,120,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697655079,43,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697655375,296,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697655420,42,WNSP_AnyMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697655420,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652697655460,40,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697935532,46,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697935847,313,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697936172,315,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652697936174,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652697936298,125,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697941951,43,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697942256,305,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697942605,346,WNSP_UpdateMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1652697942605,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,681,0,1,1,null,0,0,0
+1652697942731,126,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697945662,45,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697945962,300,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697946011,46,WNSP_AnyMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1652697946011,0,Debug Sampler,200,OK,Thread Group 1-1,text,true,,680,0,1,1,null,0,0,0
+1652697946054,43,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653301627287,57,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653301627651,363,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653301627968,311,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1653301628105,136,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653302021787,59,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653302022149,362,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
+1653302022413,260,WNSP_ServiceRequestMessage(null),,,Thread Group 1-1,,false,,0,0,1,1,null,0,0,0
+1653302022555,141,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
