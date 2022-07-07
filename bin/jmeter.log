@@ -1,0 +1,232 @@
+2022-07-07 13:17:01,369 INFO [main] o.a.j.u.JMeterUtils []: Setting Locale to en_US
+2022-07-07 13:17:01,408 INFO [main] o.a.j.JMeter []: Loading user properties from: user.properties
+2022-07-07 13:17:01,408 INFO [main] o.a.j.JMeter []: Loading system properties from: system.properties
+2022-07-07 13:17:01,430 INFO [main] o.a.j.JMeter []: Copyright (c) 1998-2021 The Apache Software Foundation
+2022-07-07 13:17:01,430 INFO [main] o.a.j.JMeter []: Version 5.4.3
+2022-07-07 13:17:01,430 INFO [main] o.a.j.JMeter []: java.version=1.8.0_332
+2022-07-07 13:17:01,430 INFO [main] o.a.j.JMeter []: java.vm.name=OpenJDK 64-Bit Server VM
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: os.name=Linux
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: os.arch=amd64
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: os.version=3.10.0-957.el7.x86_64
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: file.encoding=UTF-8
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: java.awt.headless=true
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: Max memory     =958922752
+2022-07-07 13:17:01,431 INFO [main] o.a.j.JMeter []: Available Processors =1
+2022-07-07 13:17:01,443 INFO [main] o.a.j.JMeter []: Default Locale=English (United States)
+2022-07-07 13:17:01,443 INFO [main] o.a.j.JMeter []: JMeter  Locale=English (United States)
+2022-07-07 13:17:01,444 INFO [main] o.a.j.JMeter []: JMeterHome=/home/ssamoilic/JMT
+2022-07-07 13:17:01,444 INFO [main] o.a.j.JMeter []: user.dir  =/home/ssamoilic/JMT/bin
+2022-07-07 13:17:01,444 INFO [main] o.a.j.JMeter []: PWD       =/home/ssamoilic/JMT/bin
+2022-07-07 13:17:01,445 INFO [main] o.a.j.JMeter []: IP: 127.0.0.1 Name: localhost.localdomain FullName: localhost
+2022-07-07 13:17:01,467 INFO [main] o.a.j.s.FileServer []: Default base='/home/ssamoilic/JMT/bin'
+2022-07-07 13:17:01,469 INFO [main] o.a.j.s.FileServer []: Set new base='/home/ssamoilic/JMT/bin'
+2022-07-07 13:17:01,889 INFO [main] o.a.j.s.SaveService []: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-07-07 13:17:01,979 INFO [main] o.a.j.s.SaveService []: Using SaveService properties file encoding UTF-8
+2022-07-07 13:17:02,011 INFO [main] o.a.j.s.SaveService []: Using SaveService properties version 5.0
+2022-07-07 13:17:02,021 INFO [main] o.a.j.s.SaveService []: Loading file: TestScript.jmx
+2022-07-07 13:17:02,140 INFO [main] o.a.j.p.h.c.CookieManager []: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2022-07-07 13:17:02,145 INFO [main] o.a.j.p.h.c.CacheManager []: Will only cache the following methods: [GET]
+2022-07-07 13:17:02,222 INFO [main] o.a.j.p.h.s.HTTPSamplerBase []: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-07 13:17:02,223 INFO [main] o.a.j.p.h.s.HTTPSamplerBase []: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-07 13:17:02,223 INFO [main] o.a.j.p.h.s.HTTPSamplerBase []: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-07 13:17:02,223 INFO [main] o.a.j.p.h.s.HTTPSamplerBase []: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-07-07 13:17:02,223 INFO [main] o.a.j.p.h.s.HTTPSamplerBase []: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-07-07 13:17:02,223 INFO [main] o.a.j.p.h.s.HTTPSamplerBase []: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-07-07 13:17:03,181 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,181 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,181 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,181 ERROR [main] o.a.j.c.IncludeController []: Include Controller 'GoToCategoty_and_AddToCart${count}' can't load 'JMXfiles\Add_to_cart_Test_fragment.jmx' - see log for details
+2022-07-07 13:17:03,182 ERROR [main] o.a.j.u.JMeterUtils []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error - see log for details
+2022-07-07 13:17:03,182 WARN [main] o.a.j.c.IncludeController []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx and /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1034) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.3]
+2022-07-07 13:17:03,188 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,201 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,201 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,201 ERROR [main] o.a.j.c.IncludeController []: Include Controller 'IC-Delete_all_products' can't load 'JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx' - see log for details
+2022-07-07 13:17:03,201 ERROR [main] o.a.j.u.JMeterUtils []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error - see log for details
+2022-07-07 13:17:03,202 WARN [main] o.a.j.c.IncludeController []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx and /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1034) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.3]
+2022-07-07 13:17:03,203 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,203 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,203 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,203 ERROR [main] o.a.j.c.IncludeController []: Include Controller 'GoToCategoty_and_AddToCart${count}' can't load 'JMXfiles\Add_to_cart_Test_fragment.jmx' - see log for details
+2022-07-07 13:17:03,203 ERROR [main] o.a.j.u.JMeterUtils []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error - see log for details
+2022-07-07 13:17:03,203 WARN [main] o.a.j.c.IncludeController []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx and /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.clone(IncludeController.java:63) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.JMeter.ensureReplaceableControllerIsLoaded(JMeter.java:1237) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1175) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1187) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1187) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1187) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.convertSubTree(JMeter.java:1151) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1039) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.3]
+2022-07-07 13:17:03,204 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,204 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,204 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,204 ERROR [main] o.a.j.c.IncludeController []: Include Controller 'IC-Delete_all_products' can't load 'JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx' - see log for details
+2022-07-07 13:17:03,204 ERROR [main] o.a.j.u.JMeterUtils []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error - see log for details
+2022-07-07 13:17:03,205 WARN [main] o.a.j.c.IncludeController []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx and /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.clone(IncludeController.java:63) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.JMeter.ensureReplaceableControllerIsLoaded(JMeter.java:1237) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1175) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1187) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.pConvertSubTree(JMeter.java:1187) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.convertSubTree(JMeter.java:1151) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1039) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.3]
+2022-07-07 13:17:03,207 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,208 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,208 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,208 ERROR [main] o.a.j.c.IncludeController []: Include Controller 'GoToCategoty_and_AddToCart${count}' can't load 'JMXfiles\Add_to_cart_Test_fragment.jmx' - see log for details
+2022-07-07 13:17:03,208 ERROR [main] o.a.j.u.JMeterUtils []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error - see log for details
+2022-07-07 13:17:03,208 WARN [main] o.a.j.c.IncludeController []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx and /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.clone(IncludeController.java:63) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNodeToTree(TreeCloner.java:76) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNode(TreeCloner.java:63) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:993) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:994) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:994) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverse(HashTree.java:976) [jorphan.jar:5.4.3]
+	at org.apache.jmeter.JMeter.convertSubTree(JMeter.java:1154) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1039) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.3]
+2022-07-07 13:17:03,209 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,209 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,209 INFO [main] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,209 ERROR [main] o.a.j.c.IncludeController []: Include Controller 'IC-Delete_all_products' can't load 'JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx' - see log for details
+2022-07-07 13:17:03,209 ERROR [main] o.a.j.u.JMeterUtils []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error - see log for details
+2022-07-07 13:17:03,209 WARN [main] o.a.j.c.IncludeController []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx and /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.clone(IncludeController.java:63) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNodeToTree(TreeCloner.java:76) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNode(TreeCloner.java:63) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:993) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:994) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverse(HashTree.java:976) [jorphan.jar:5.4.3]
+	at org.apache.jmeter.JMeter.convertSubTree(JMeter.java:1154) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:1039) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:1007) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.JMeter.start(JMeter.java:579) [ApacheJMeter_core.jar:5.4.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_332]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_332]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_332]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_332]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:254) [ApacheJMeter.jar:5.4.3]
+2022-07-07 13:17:03,211 INFO [main] o.a.j.JMeter []: Creating summariser <summary>
+2022-07-07 13:17:03,245 INFO [StandardJMeterEngine] o.a.j.e.StandardJMeterEngine []: Running the test!
+2022-07-07 13:17:03,246 INFO [StandardJMeterEngine] o.a.j.s.SampleEvent []: List of sample_variables: []
+2022-07-07 13:17:03,246 INFO [StandardJMeterEngine] o.a.j.s.SampleEvent []: List of sample_variables: []
+2022-07-07 13:17:03,252 INFO [StandardJMeterEngine] o.a.j.e.u.CompoundVariable []: Note: Function class names must contain the string: '.functions.'
+2022-07-07 13:17:03,252 INFO [StandardJMeterEngine] o.a.j.e.u.CompoundVariable []: Note: Function class names must not contain the string: '.gui.'
+2022-07-07 13:17:03,632 INFO [StandardJMeterEngine] o.a.j.JMeter []: Running test (1657189023632)
+2022-07-07 13:17:03,672 INFO [StandardJMeterEngine] o.a.j.e.StandardJMeterEngine []: Starting ThreadGroup: 1 : TS2-Load testing
+2022-07-07 13:17:03,672 INFO [StandardJMeterEngine] o.a.j.e.StandardJMeterEngine []: Starting 1 threads for group TS2-Load testing.
+2022-07-07 13:17:03,672 INFO [StandardJMeterEngine] o.a.j.e.StandardJMeterEngine []: Thread will continue on error
+2022-07-07 13:17:03,672 INFO [StandardJMeterEngine] o.a.j.t.ThreadGroup []: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2022-07-07 13:17:03,676 INFO [StandardJMeterEngine] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,676 INFO [StandardJMeterEngine] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,676 INFO [StandardJMeterEngine] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+2022-07-07 13:17:03,677 ERROR [StandardJMeterEngine] o.a.j.c.IncludeController []: Include Controller 'GoToCategoty_and_AddToCart${count}' can't load 'JMXfiles\Add_to_cart_Test_fragment.jmx' - see log for details
+2022-07-07 13:17:03,677 ERROR [StandardJMeterEngine] o.a.j.u.JMeterUtils []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error - see log for details
+2022-07-07 13:17:03,677 WARN [StandardJMeterEngine] o.a.j.c.IncludeController []: Including file "JMXfiles\Add_to_cart_Test_fragment.jmx" failed for Include Controller "GoToCategoty_and_AddToCart${count}", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx and /home/ssamoilic/JMT/bin/JMXfiles\Add_to_cart_Test_fragment.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.clone(IncludeController.java:63) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNodeToTree(TreeCloner.java:76) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNode(TreeCloner.java:63) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:993) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:994) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverse(HashTree.java:976) [jorphan.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.cloneTree(ThreadGroup.java:535) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.makeThread(ThreadGroup.java:310) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.startNewThread(ThreadGroup.java:265) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.start(ThreadGroup.java:244) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.StandardJMeterEngine.startThreadGroup(StandardJMeterEngine.java:527) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:452) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_332]
+2022-07-07 13:17:03,678 INFO [StandardJMeterEngine] o.a.j.c.IncludeController []: loadIncludedElements -- try to load included module: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,678 INFO [StandardJMeterEngine] o.a.j.c.IncludeController []: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,678 INFO [StandardJMeterEngine] o.a.j.c.IncludeController []: loadIncludedElements -Attempting to read it from: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+2022-07-07 13:17:03,678 ERROR [StandardJMeterEngine] o.a.j.c.IncludeController []: Include Controller 'IC-Delete_all_products' can't load 'JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx' - see log for details
+2022-07-07 13:17:03,678 ERROR [StandardJMeterEngine] o.a.j.u.JMeterUtils []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error - see log for details
+2022-07-07 13:17:03,678 WARN [StandardJMeterEngine] o.a.j.c.IncludeController []: Including file "JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx" failed for Include Controller "IC-Delete_all_products", unexpected error
+java.io.IOException: loadIncludedElements -failed for: /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx and /home/ssamoilic/JMT/bin/JMXfiles\SC2,Step2.6-2.7_While_delete_all.jmx
+	at org.apache.jmeter.control.IncludeController.loadIncludedElements(IncludeController.java:138) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.resolveReplacementSubTree(IncludeController.java:110) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.control.IncludeController.clone(IncludeController.java:63) [ApacheJMeter_components.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNodeToTree(TreeCloner.java:76) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.TreeCloner.addNode(TreeCloner.java:63) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverseInto(HashTree.java:993) [jorphan.jar:5.4.3]
+	at org.apache.jorphan.collections.HashTree.traverse(HashTree.java:976) [jorphan.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.cloneTree(ThreadGroup.java:535) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.makeThread(ThreadGroup.java:310) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.startNewThread(ThreadGroup.java:265) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.threads.ThreadGroup.start(ThreadGroup.java:244) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.StandardJMeterEngine.startThreadGroup(StandardJMeterEngine.java:527) [ApacheJMeter_core.jar:5.4.3]
+	at org.apache.jmeter.engine.StandardJMeterEngine.run(StandardJMeterEngine.java:452) [ApacheJMeter_core.jar:5.4.3]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_332]
+2022-07-07 13:17:03,687 INFO [StandardJMeterEngine] o.a.j.t.ThreadGroup []: Started thread group number 1
+2022-07-07 13:17:03,687 INFO [StandardJMeterEngine] o.a.j.e.StandardJMeterEngine []: All thread groups have been started
+2022-07-07 13:17:03,700 INFO [TS2-Load testing 1-1] o.a.j.t.JMeterThread []: Thread started: TS2-Load testing 1-1
+2022-07-07 13:17:03,972 INFO [TS2-Load testing 1-1] o.a.j.p.h.s.HTTPHCAbstractImpl []: Local host = localhost.localdomain
+2022-07-07 13:17:03,980 INFO [TS2-Load testing 1-1] o.a.j.p.h.s.HTTPHC4Impl []: HTTP request retry count = 0
+2022-07-07 13:17:03,982 INFO [TS2-Load testing 1-1] o.a.j.s.SampleResult []: Note: Sample TimeStamps are START times
+2022-07-07 13:17:03,982 INFO [TS2-Load testing 1-1] o.a.j.s.SampleResult []: sampleresult.default.encoding is set to ISO-8859-1
+2022-07-07 13:17:03,982 INFO [TS2-Load testing 1-1] o.a.j.s.SampleResult []: sampleresult.useNanoTime=true
+2022-07-07 13:17:03,982 INFO [TS2-Load testing 1-1] o.a.j.s.SampleResult []: sampleresult.nanoThreadSleep=5000
+2022-07-07 13:17:04,667 INFO [TS2-Load testing 1-1] o.a.j.r.Summariser []: summary +      1 in 00:00:01 =    1.0/s Avg:   572 Min:   572 Max:   572 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2022-07-07 13:17:04,705 INFO [TS2-Load testing 1-1] o.a.j.t.JMeterThread []: Thread is done: TS2-Load testing 1-1
+2022-07-07 13:17:04,706 INFO [TS2-Load testing 1-1] o.a.j.t.JMeterThread []: Thread finished: TS2-Load testing 1-1
+2022-07-07 13:17:04,707 INFO [StandardJMeterEngine] o.a.j.e.StandardJMeterEngine []: Notifying test listeners of end of test
+2022-07-07 13:17:04,708 INFO [StandardJMeterEngine] o.a.j.r.Summariser []: summary =      1 in 00:00:01 =    0.9/s Avg:   572 Min:   572 Max:   572 Err:     0 (0.00%)
