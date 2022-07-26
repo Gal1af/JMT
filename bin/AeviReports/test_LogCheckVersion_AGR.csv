@@ -1,5 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
-1652699585232,43,WNSP_TCPConnect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
-1652699585552,320,WNSP_Connect,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
-1652699585597,44,WNSP_CheckVersionMessage,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0
-1652699585639,42,WNSP_Disconnect: Disconnected,200,OK,Thread Group 1-1,,true,,0,0,1,1,null,0,0,0

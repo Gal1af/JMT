@@ -79,26 +79,26 @@
                             <!-- /.nav-second-level -->
                         </li>
                         
-                        <!-- <li> -->
-                            <!-- <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Customs Graphs<span class="fa arrow"></span></a> -->
-                            <!-- <ul class="nav nav-second-level"> -->
-                                <!-- <li> -->
-                                    <!-- <a href="CustomsGraphs.html">Over Time<span class="fa arrow"></span></a> -->
-                                    <!-- <ul class="nav nav-third-level in" id="submenu"> -->
-                                        <!-- <#list customsGraphsData?keys as key> -->
-                                            <!-- <li> -->
-                                                <!-- <a href="CustomsGraphs.html#${key}" onclick="$('#bodyResponse${key}').collapse('show');"> -->
-                                                <!-- <#assign title = ""+graphConfigurations[key].getTitle()> -->
-                                                <!-- <#if title == "">Default Graph Title -->
-                                                <!-- <#else>${title} -->
-                                                <!-- </#if> -->
-                                                <!-- </a> -->
-                                            <!-- </li> -->
-                                        <!-- </#list> -->
-                                    <!-- </ul> -->
-                                <!-- <li> -->
-                            <!-- </ul> -->
-                        <!-- </li> -->
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Customs Graphs<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="CustomsGraphs.html">Over Time<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level in" id="submenu">
+                                        <#list customsGraphsData?keys as key>
+                                            <li>
+                                                <a href="CustomsGraphs.html#${key}" onclick="$('#bodyResponse${key}').collapse('show');">
+                                                <#assign title = ""+graphConfigurations[key].getTitle()>
+                                                <#if title == "">Default Graph Title
+                                                <#else>${title}
+                                                </#if>
+                                                </a>
+                                            </li>
+                                        </#list>
+                                    </ul>
+                                <li>
+                            </ul>
+                        </li>
 
                     </ul>
                 </div>
@@ -146,63 +146,63 @@
                 </div>
             </div>    
             <!-- /.row -->
-                <!-- <div class="row" id="graphContainer"> -->
+                <div class="row" id="graphContainer">
                 
-                <!-- <#assign loopCount = 0> -->
-                <!-- <#list customsGraphsData?keys as key>  -->
-                    <!-- <div class="col-lg-12 portlet" id="${key!"Clé pas trouvé"}"> -->
-                        <!-- <div class="panel panel-default"> -->
-                            <!-- <div class="panel-heading portlet-header"> -->
-                                 <!-- <i  class="fa fa-bar-chart-o fa-fw" ></i>  -->
-                                <!-- <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyResponse${key}" aria-expanded="true" aria-controls="body${key}"><#assign title = ""+graphConfigurations[key].getTitle()><#if title == "">Default Graph Title<#else>${title}</#if></span> -->
-                                 <!-- <div class="pull-right"> -->
-                                    <!-- <div class="btn-group"> -->
-                                        <!-- <a class="btn btn-link btn-xs"> -->
-                                            <!-- <i class="glyphicon glyphicon-resize-vertical"></i> -->
-                                        <!-- </a> -->
-                                        <!-- <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="dropdown"> -->
-                                            <!-- <i class="fa fa-wrench"></i> -->
-                                        <!-- </button> -->
-                                        <!-- <ul class="dropdown-menu dropdown-user"> -->
-                                            <!-- <li><a href="#bodyResponse${key}" onClick="checkAll('choicesResponse${key}');">Display all samples</a> -->
-                                            <!-- </li> -->
-                                            <!-- <li><a href="#bodyResponse${key}" onClick="uncheckAll('choicesResponse${key}');">Hide all samples</a> -->
-                                            <!-- </li> -->
-                                            <!-- <li><a href="#bodyResponse${key}" onclick="exportToPNG('flotResponse${key}', this);">Save as PNG</a></li> -->
-                                        <!-- </ul> -->
-                                        <!-- <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyResponse${key}" aria-expanded="true" aria-controls="bodyResponse${key}"> -->
-                                            <!-- <i class="fa fa-chevron-up"></i> -->
-                                        <!-- </button> -->
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                            <!-- </div> -->
+                <#assign loopCount = 0>
+                <#list customsGraphsData?keys as key> 
+                    <div class="col-lg-12 portlet" id="${key!"Clé pas trouvé"}">
+                        <div class="panel panel-default">
+                            <div class="panel-heading portlet-header">
+                                 <i  class="fa fa-bar-chart-o fa-fw" ></i> 
+                                <span type="button" class="dropdown-toggle click-title span-title" data-toggle="collapse" href="#bodyResponse${key}" aria-expanded="true" aria-controls="body${key}"><#assign title = ""+graphConfigurations[key].getTitle()><#if title == "">Default Graph Title<#else>${title}</#if></span>
+                                 <div class="pull-right">
+                                    <div class="btn-group">
+                                        <a class="btn btn-link btn-xs">
+                                            <i class="glyphicon glyphicon-resize-vertical"></i>
+                                        </a>
+                                        <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-wrench"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#bodyResponse${key}" onClick="checkAll('choicesResponse${key}');">Display all samples</a>
+                                            </li>
+                                            <li><a href="#bodyResponse${key}" onClick="uncheckAll('choicesResponse${key}');">Hide all samples</a>
+                                            </li>
+                                            <li><a href="#bodyResponse${key}" onclick="exportToPNG('flotResponse${key}', this);">Save as PNG</a></li>
+                                        </ul>
+                                        <button type="button" class="btn btn-link btn-xs dropdown-toggle" data-toggle="collapse" href="#bodyResponse${key}" aria-expanded="true" aria-controls="bodyResponse${key}">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- /.panel-heading -->
-                            <!-- <#if loopCount == 0> -->
-                            <!-- <div class="collapse in portlet-content" id="bodyResponse${key}"> -->
-                            <!-- <#else> -->
-                            <!-- <div class="collapse out portlet-content" id="bodyResponse${key}"> -->
-                            <!-- </#if> -->
-                                <!-- <div class="panel-body" id="collapseResponse${key}"> -->
-                                    <!-- <div class="flot-chart"> -->
-                                        <!-- <div class="flot-chart-content" id="flotResponse${key}" style="float: left; width:80%;"></div> -->
-                                        <!-- <div style="float:left;margin-left:5px"> -->
-                                            <!-- <p>Zoom :</p> -->
-                                            <!-- <div id="overviewResponse${key}" style="width:190px;height:100px;"></div> -->
-                                        <!-- </div> -->
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                                <!-- <div class="panel-footer" id="footerResponse${key}"> -->
-                                    <!-- <p id="legendResponse${key}" hidden></p> -->
-                                    <!-- <ul id="choicesResponse${key}" class="legend"></ul> -->
-                                <!-- </div> -->
-                            <!-- </div>     -->
-                        <!-- </div> -->
+                            <#if loopCount == 0>
+                            <div class="collapse in portlet-content" id="bodyResponse${key}">
+                            <#else>
+                            <div class="collapse out portlet-content" id="bodyResponse${key}">
+                            </#if>
+                                <div class="panel-body" id="collapseResponse${key}">
+                                    <div class="flot-chart">
+                                        <div class="flot-chart-content" id="flotResponse${key}" style="float: left; width:80%;"></div>
+                                        <div style="float:left;margin-left:5px">
+                                            <p>Zoom :</p>
+                                            <div id="overviewResponse${key}" style="width:190px;height:100px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer" id="footerResponse${key}">
+                                    <p id="legendResponse${key}" hidden></p>
+                                    <ul id="choicesResponse${key}" class="legend"></ul>
+                                </div>
+                            </div>    
+                        </div>
                         <!-- /.panel-body -->
-                    <!-- </div> -->
+                    </div>
                     <!-- /.panel -->
-                    <!-- <#assign loopCount++> -->
-                <!-- </#list> -->
-                <!-- </div> -->
+                    <#assign loopCount++>
+                </#list>
+                </div>
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->

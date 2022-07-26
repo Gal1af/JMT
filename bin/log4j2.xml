@@ -33,10 +33,10 @@
     </RollingFile>
     -->
     <File name="jmeter-log" fileName="${sys:jmeter.logfile:-jmeter.log}" append="false">
-    <PatternLayout>
-        <pattern>%d %p [%t] %c{1.} %x: %m%n</pattern>
-    </PatternLayout>
-	</File>
+        <PatternLayout>
+            <pattern>%d %p %c{1.}: %m%n</pattern>
+        </PatternLayout>
+    </File>
 
     <GuiLogEvent name="gui-log-event">
       <PatternLayout>
